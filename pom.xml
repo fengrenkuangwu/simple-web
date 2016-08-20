@@ -1,16 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.leaf.simpleWeb</groupId>
 	<artifactId>simple-web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	
+
 	<properties>
-		<!-- mybatis-spring包1.1.1中自带（依赖）了很多3.1.1的spring包，1.2.1中 就单独的一个jar包没有多加进来-->
-		<spring.version>3.2.4.RELEASE</spring.version>
-		<mybatis-spring.version>1.2.1</mybatis-spring.version>
+		<!-- mybatis-spring包1.1.1中自带（依赖）了很多3.1.1的spring包，1.2.1中 就单独的一个jar包没有多加进来 -->
+		<spring.version>4.0.2.RELEASE</spring.version>
+		<mybatis-spring.version>1.2.2</mybatis-spring.version>
 	</properties>
-  
+
 	<dependencies>
 		<!-- spring 所需包 -->
 		<dependency>
@@ -97,7 +98,7 @@
 			<type>jar</type>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
@@ -191,7 +192,14 @@
 			<version>2.2.3</version>
 			<classifier>jdk15</classifier>
 		</dependency>
-		
+
+		<!-- 一个spider包 -->
+		<dependency>
+			<groupId>edu.uci.ics</groupId>
+			<artifactId>crawler4j</artifactId>
+			<version>4.2</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 	</build>
